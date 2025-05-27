@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurpleSite - Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="dark-bg">
+        <div class="container">
+            <h1 class="logo">Purple<span>Site</span></h1>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="profile.html" class="active">Профиль</a>
+                <a href="#" id="logoutBtn">Выйти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="profile">
+            <h2>Ваш профиль</h2>
+            <div class="profile-info">
+                <div class="info-item">
+                    <span class="label">ФИО:</span>
+                    <span id="profileFullName" class="value"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Логин:</span>
+                    <span id="profileUsername" class="value"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Email:</span>
+                    <span id="profileEmail" class="value"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Пол:</span>
+                    <span id="profileGender" class="value"></span>
+                </div>
+            </div>
+            <button id="deleteAccountBtn" class="btn red-btn">Удалить аккаунт</button>
+        </section>
+    </main>
+
+    <footer class="dark-bg">
+        <div class="container">
+            <p>&copy; 2023 PurpleSite. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
